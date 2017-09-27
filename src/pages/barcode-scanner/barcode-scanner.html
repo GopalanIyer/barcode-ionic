@@ -16,7 +16,7 @@
 <ion-content padding>
   <button ion-button (click)="scanner()"> Scan QR Code </button>
 
-  <ion-card *ngif="scannedcode">
+  <ion-card *ngIf="scannedcode">
     <ion-card-content>
       scanned code :{{scannedcode}}
 
@@ -31,7 +31,7 @@
 
   </ion-item>
   <button ion-button (click)="generate()"> Generate QR Code </button>
-  <ion-card *ngif="generatedcode">
+  <ion-card *ngIf="generatedcode">
     <ngx-qrcode [qrc-value]="generatedcode"></ngx-qrcode>
     <ion-card-content>
       <p>value: {{generatedcode}}</p>

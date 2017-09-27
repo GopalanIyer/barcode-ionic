@@ -15,6 +15,14 @@ import { BarcodeScannerPage } from '../pages/barcode-scanner/barcode-scanner';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+export const config={
+    apiKey: "AIzaSyDE192oaja3ZBytzpbTCogj-vWe5qWHAE8",
+    authDomain: "ionic-9d2c4.firebaseapp.com",
+    databaseURL: "https://ionic-9d2c4.firebaseio.com",
+    projectId: "ionic-9d2c4",
+    storageBucket: "",
+    messagingSenderId: "813628054701"
+  }
 @NgModule({
   declarations: [
     MyApp,
@@ -29,6 +37,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   imports: [
     BrowserModule,
     NgxQRCodeModule,
+    AngularFireModule.initializeApp(config),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -45,6 +54,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StatusBar,
     BarcodeScanner,
     SplashScreen,
+    AngularFireAuth,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

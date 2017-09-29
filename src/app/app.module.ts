@@ -14,6 +14,9 @@ import { Help4Page } from '../pages/help4/help4';
 import { BarcodeScannerPage } from '../pages/barcode-scanner/barcode-scanner';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { RegisterPage} from '../pages/register/register';
+import { MyCartPage } from '../pages/my-cart/my-cart';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 export const config={
     apiKey: "AIzaSyDE192oaja3ZBytzpbTCogj-vWe5qWHAE8",
@@ -32,7 +35,8 @@ export const config={
     TabsPage,
     Help4Page,
     BarcodeScannerPage,
-    
+    RegisterPage,
+    MyCartPage,
   ],
   imports: [
     BrowserModule,
@@ -49,12 +53,15 @@ export const config={
     TabsPage,
     Help4Page,
     BarcodeScannerPage,
+    RegisterPage,
+    MyCartPage,
   ],
   providers: [
     StatusBar,
     BarcodeScanner,
     SplashScreen,
     AngularFireAuth,
+    AngularFireDatabase,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

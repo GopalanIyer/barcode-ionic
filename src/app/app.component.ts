@@ -4,7 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 //import { He } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
-
+import { RegisterPage} from '../pages/register/register';
+import { MyCartPage } from '../pages/my-cart/my-cart';
 
 @Component({
   templateUrl: 'app.html'

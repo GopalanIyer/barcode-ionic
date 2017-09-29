@@ -6,25 +6,34 @@
 -->
 <ion-header>
   <ion-navbar>
-   
+
     <ion-title>Login</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content>
-<ion-card>
-<ion-card-content>
-<ion-list>
-  <ion-item>
-    <ion-label floating> Email </ion-label>
-    <ion-input type="email" [(ngModel)]="email"></ion-input>
- </ion-item>
-<ion-item>
-  <ion-label floating> Password</ion-label>
-  <ion-input type="password" [(ngModel)]="password"></ion-input>
-</ion-item>
-<button ion-button (click)="login()">Login</button>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label floating> Email </ion-label>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating> Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-row>
 
-</ion-list>
-</ion-card-content>
-</ion-card>
+          <button ion-button (click)="login()">Login</button>
+          
+          <button ion-button (click)="signup()">Sign Up</button>
+          
+        </ion-row>
+        <ion-row>
+          
+        </ion-row>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -18,6 +18,9 @@ import { RegisterPage} from '../pages/register/register';
 import { MyCartPage } from '../pages/my-cart/my-cart';
 import { AngularFireDatabase } from 'angularfire2/database';
 
+
+
+
 export const config={
     apiKey: "AIzaSyDE192oaja3ZBytzpbTCogj-vWe5qWHAE8",
     authDomain: "ionic-9d2c4.firebaseapp.com",
@@ -37,6 +40,7 @@ export const config={
     BarcodeScannerPage,
     RegisterPage,
     MyCartPage,
+   
   ],
   imports: [
     BrowserModule,
@@ -55,6 +59,7 @@ export const config={
     BarcodeScannerPage,
     RegisterPage,
     MyCartPage,
+   
   ],
   providers: [
     StatusBar,

@@ -8,6 +8,7 @@
 
   <ion-navbar>
     <ion-title>MyCart</ion-title>
+    <button ion-button (click)="checkout()" align-right>PDF</button>
   </ion-navbar>
 
 </ion-header>
@@ -25,7 +26,7 @@
 
 
     </ion-item>
-    <ion-item-sliding #item *ngFor="let object of list | async">
+    <ion-item-sliding #item *ngFor="let object of cart">
       <ion-item>
         <ion-row>
           <ion-col>{{object.name}} </ion-col>
@@ -39,7 +40,7 @@
 
       <ion-item-options side="right">
         <button ion-button color="danger" (click)="remove(object)">Remove</button>
-        <button ion-button (click)="edit()">Edit</button>
+        <button ion-button (click)="edit(object)">Edit</button>
       </ion-item-options>
 
     </ion-item-sliding>
@@ -51,5 +52,6 @@
   <ion-title>
     <h4>Total Cost:{{amt}}</h4>
   </ion-title>
-  <button ion-button (click)="add()">Add</button>
+  <button ion-button (click)="scan()">Scan</button>
+  
 </ion-footer>

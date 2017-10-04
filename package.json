@@ -28,6 +28,7 @@
         "angularfire2": "^4.0.0-rc.2",
         "cordova-android": "^6.2.3",
         "cordova-browser": "^4.1.0",
+        "cordova-pdf-generator": "^1.5.4",
         "cordova-plugin-compat": "^1.0.0",
         "cordova-plugin-device": "^1.1.4",
         "cordova-plugin-googleplus": "^5.1.1",
@@ -58,7 +59,8 @@
             "cordova-plugin-statusbar": {},
             "cordova-plugin-whitelist": {},
             "ionic-plugin-keyboard": {},
-            "cordova-plugin-googleplus": {}
+            "cordova-plugin-googleplus": {},
+            "cordova-pdf-generator": {}
         },
         "platforms": [
             "android",
